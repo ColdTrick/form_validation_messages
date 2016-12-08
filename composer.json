@@ -1,0 +1,16 @@
+{
+	"name": "coldtrick/form_validation_messages",
+	"description": "Change the appearance of form validation messages",
+	"type": "elgg-plugin",
+	"license": "GPL-2.0",
+	"support": {
+		"source": "https://github.com/ColdTrick/form_validation_messages",
+		"issues": "https://github.com/ColdTrick/form_validation_messages/issues"
+	},
+	"require": {
+		"composer/installers": "^1.0.8"
+	},
+	"require-dev": {
+		"coldtrick/sniffs": "dev-master"
+	}
+}
