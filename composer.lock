@@ -4,7 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "6bef7b916e9933fdfc5c9fc352ae32a4",
+    "hash": "0c47dbc8f59a77635ba0aa7e45a64885",
+    "content-hash": "334eaa352e3cfd5e1da768b79ebfd196",
     "packages": [
         {
             "name": "composer/installers",
@@ -111,10 +112,37 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2016-08-13T20:53:52+00:00"
+            "time": "2016-08-13 20:53:52"
         }
     ],
     "packages-dev": [
+        {
+            "name": "coldtrick/releases",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ColdTrick/releases.git",
+                "reference": "e20ecf5afabeb98c03d4ec6eb5e1c7ea9f03b916"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ColdTrick/releases/zipball/e20ecf5afabeb98c03d4ec6eb5e1c7ea9f03b916",
+                "reference": "e20ecf5afabeb98c03d4ec6eb5e1c7ea9f03b916",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "description": "A set of scripts needed for building releases",
+            "keywords": [
+                "ci",
+                "release",
+                "travis"
+            ],
+            "time": "2016-11-18 14:06:30"
+        },
         {
             "name": "coldtrick/sniffs",
             "version": "dev-master",
@@ -140,7 +168,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "description": "Elgg coding standards",
-            "time": "2015-02-17T14:47:25+00:00"
+            "time": "2015-02-17 14:47:25"
         },
         {
             "name": "squizlabs/php_codesniffer",
@@ -218,13 +246,14 @@
                 "phpcs",
                 "standards"
             ],
-            "time": "2016-11-30T04:02:31+00:00"
+            "time": "2016-11-30 04:02:31"
         }
     ],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "coldtrick/sniffs": 20
+        "coldtrick/sniffs": 20,
+        "coldtrick/releases": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
