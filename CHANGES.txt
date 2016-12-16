@@ -1,2 +1,7 @@
 Version history
 ===============
+
+1.0 (2016-12-16):
+
+- added: base plugin structure
+- added: form validation message now shows as elgg error message
