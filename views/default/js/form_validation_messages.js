@@ -26,17 +26,31 @@ define('form_validation_messages', function(require) {
 		}
 
 		var message = label.replace(/\*+$/,'') + ": " + event.target.validationMessage;
-		
+		$('.elgg-system-messages .elgg-message:contains("' + message + '")').remove();
 		elgg.register_error(message, 2000);
+		
+		event.preventDefault();
+	};
+
+	var hideValidateErrorMessage = function(event) {
+		var label = getLabelTextForElement(this);
+		if (!label) {
+			return;
+		}
+		
+		var message = label.replace(/\*+$/,'') + ": " + event.target.validationMessage;
+		$('.elgg-system-messages .elgg-message:contains("' + message + '")').remove();
 		
 		event.preventDefault();
 	};
 	
 	var init = function() {
 		$('input').on('invalid', showValidateErrorMessage);
-		
+		$('input').on('input', hideValidateErrorMessage);
+
 		$(document).ajaxStop(function () {
 			$('input').on('invalid', showValidateErrorMessage);
+			$('input').on('input', hideValidateErrorMessage);
 		});
 	};
 	
