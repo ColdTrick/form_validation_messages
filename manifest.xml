@@ -3,7 +3,7 @@
 	<name>Form Validation Messages</name>
 	<id>form_validation_messages</id>
 	<author>ColdTrick IT Solutions</author>
-	<version>1.0</version>
+	<version>1.0.1</version>
 	<description>Change the appearance of form validation messages</description>
 	<website>http://www.coldtrick.com/</website>
 	<repository>https://github.com/ColdTrick/form_validation_messages</repository>
