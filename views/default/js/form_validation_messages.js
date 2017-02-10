@@ -45,12 +45,14 @@ define('form_validation_messages', function(require) {
 	};
 	
 	var init = function() {
-		$('input').on('invalid', showValidateErrorMessage);
-		$('input').on('input', hideValidateErrorMessage);
-
+		$(document).on('input', 'input, textarea', hideValidateErrorMessage);
+		$(document).on('change', 'select', hideValidateErrorMessage);
+		
+		$('input, textarea, select').on('invalid', showValidateErrorMessage);
+		
 		$(document).ajaxStop(function () {
-			$('input').on('invalid', showValidateErrorMessage);
-			$('input').on('input', hideValidateErrorMessage);
+			// invalid doesn't bubble so must be registered on element
+			$('input, textarea, select').on('invalid', showValidateErrorMessage);
 		});
 	};
 	
