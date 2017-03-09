@@ -45,7 +45,7 @@ define('form_validation_messages', function(require) {
 	};
 	
 	var init = function() {
-		$(document).on('input', 'input, textarea', hideValidateErrorMessage);
+		$(document).on('input change', 'input, textarea', hideValidateErrorMessage);
 		$(document).on('change', 'select', hideValidateErrorMessage);
 		
 		$('input, textarea, select').on('invalid', showValidateErrorMessage);
