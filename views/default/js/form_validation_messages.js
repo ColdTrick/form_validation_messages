@@ -9,6 +9,11 @@ define('form_validation_messages', function(require) {
 		var $label;
 		var id = $(elem).attr('id');
 		
+		if (id === undefined) {
+			// check if it is part of an input radio 
+			id = $(elem).parents('.elgg-input-radios').attr('id');
+		}
+
 		if (id) {
 			$label = $('label[for="' + id + '"]').eq(0);
 			if ($label.length) {
