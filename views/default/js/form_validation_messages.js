@@ -13,6 +13,11 @@ define('form_validation_messages', function(require) {
 			// check if it is part of an input radio 
 			id = $(elem).parents('.elgg-input-radios').attr('id');
 		}
+		
+		if (id === undefined) {
+			// check if it is part of an input checkboxes 
+			id = $(elem).parents('.elgg-input-checkboxes').attr('id');
+		}
 
 		if (id) {
 			$label = $('label[for="' + id + '"]').eq(0);
