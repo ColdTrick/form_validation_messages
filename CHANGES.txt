@@ -1,6 +1,11 @@
 Version history
 ===============
 
+1.2 (2017-11-29):
+
+- added: input checkboxes are now supported
+- fix: added support for messages from multiple radio options
+
 1.1 (2017-03-24):
 
 - added: support for select and textarea
