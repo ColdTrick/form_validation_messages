@@ -1,6 +1,10 @@
 Version history
 ===============
 
+1.2.1 (2019-03-27):
+
+- several small chores/fixes
+
 1.2 (2017-11-29):
 
 - added: input checkboxes are now supported
