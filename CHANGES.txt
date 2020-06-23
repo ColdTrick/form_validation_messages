@@ -1,6 +1,10 @@
 Version history
 ===============
 
+2.0.1 (2020-06-23):
+
+- fixed: use default form validation messages in lightbox forms
+
 2.0 (2020-05-26):
 
 - changed: increased minimal Elgg requirement to 3.3
