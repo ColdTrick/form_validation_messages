@@ -1,9 +1,7 @@
 /**
  * Take over presentation of form validation
  */
-define('form_validation_messages', function(require) {
-	var $ = require('jquery');
-	var elgg = require('elgg');
+define('form_validation_messages', ['jquery', 'elgg'], function($, elgg) {
 
 	var getLabelTextForElement = function(elem) {
 		var $label;
