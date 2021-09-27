@@ -1,6 +1,10 @@
 Version history
 ===============
 
+3.0 (2021-09-27):
+
+- changed: updated for Elgg 4
+
 2.0.1 (2020-06-23):
 
 - fixed: use default form validation messages in lightbox forms
