@@ -1,7 +1,7 @@
 /**
  * Take over presentation of form validation
  */
-define('form_validation_messages', ['jquery', 'elgg'], function($, elgg) {
+define('form_validation_messages', ['jquery', 'elgg/system_messages'], function($, system_messages) {
 
 	var getLabelTextForElement = function(elem) {
 		var $label;
@@ -39,7 +39,7 @@ define('form_validation_messages', ['jquery', 'elgg'], function($, elgg) {
 
 		var message = label.replace(/\*+$/,'') + ": " + event.target.validationMessage;
 		$('.elgg-system-messages .elgg-message:contains("' + message + '")').remove();
-		elgg.register_error(message, 2000);
+		system_messages.error(message, 0);
 		
 		event.preventDefault();
 	};
@@ -55,20 +55,16 @@ define('form_validation_messages', ['jquery', 'elgg'], function($, elgg) {
 		
 		event.preventDefault();
 	};
+
+	$(document).on('input change', 'input, textarea', hideValidateErrorMessage);
+	$(document).on('change', 'select', hideValidateErrorMessage);
 	
-	var init = function() {
-		$(document).on('input change', 'input, textarea', hideValidateErrorMessage);
-		$(document).on('change', 'select', hideValidateErrorMessage);
-		
+	$('input, textarea, select').on('invalid', showValidateErrorMessage);
+	
+	$(document).ajaxStop(function () {
+		// invalid doesn't bubble so must be registered on element
 		$('input, textarea, select').on('invalid', showValidateErrorMessage);
-		
-		$(document).ajaxStop(function () {
-			// invalid doesn't bubble so must be registered on element
-			$('input, textarea, select').on('invalid', showValidateErrorMessage);
-		});
-	};
-	
-	elgg.register_hook_handler('init', 'system', init);
+	});
 });
 
 require(['form_validation_messages']);
