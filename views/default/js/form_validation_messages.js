@@ -12,12 +12,12 @@ define('form_validation_messages', ['jquery', 'elgg/system_messages'], function(
 		}
 		
 		if (id === undefined) {
-			// check if it is part of an input radio 
+			// check if it is part of an input radio
 			id = $(elem).parents('.elgg-input-radios').attr('id');
 		}
 		
 		if (id === undefined) {
-			// check if it is part of an input checkboxes 
+			// check if it is part of an input checkboxes
 			id = $(elem).parents('.elgg-input-checkboxes').attr('id');
 		}
 

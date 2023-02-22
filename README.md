@@ -1,8 +1,8 @@
-# Form Validation Messages
+Form Validation Messages
+========================
 
 ![Elgg 4.2](https://img.shields.io/badge/Elgg-4.2-green.svg)
-[![Build Status](https://scrutinizer-ci.com/g/ColdTrick/form_validation_messages/badges/build.png?b=master)](https://scrutinizer-ci.com/g/ColdTrick/form_validation_messages/build-status/master)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/ColdTrick/form_validation_messages/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/ColdTrick/form_validation_messages/?branch=master)
+![Lint Checks](https://github.com/ColdTrick/form_validation_messages/actions/workflows/lint.yml/badge.svg?event=push)
 [![Latest Stable Version](https://poser.pugx.org/coldtrick/form_validation_messages/v/stable.svg)](https://packagist.org/packages/coldtrick/form_validation_messages)
 [![License](https://poser.pugx.org/coldtrick/form_validation_messages/license.svg)](https://packagist.org/packages/coldtrick/form_validation_messages)
 
