@@ -8,15 +8,7 @@
 		"source": "https://github.com/ColdTrick/form_validation_messages",
 		"issues": "https://github.com/ColdTrick/form_validation_messages/issues"
 	},
-	"require": {
-		"composer/installers": "^1.0.8"
-	},
 	"conflict": {
 		"elgg/elgg": "<5.0"
-	},
-	"config": {
-		"allow-plugins": {
-			"composer/installers": true
-		}
 	}
 }
